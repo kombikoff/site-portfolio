@@ -1,0 +1,16 @@
+.link {
+    font-weight: 400;
+    font-size: 22px;
+
+    @extend  %contacts-hover;
+
+    /* Tablet-big */
+    @media (max-width: 1139px) {
+        font-size: 18px;
+    }
+
+    /* Tablet-small */
+    @media (max-width: 899px) {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,243 @@
+.card {
+    width: 350px;
+    line-height: 1.3;
+    cursor: pointer;
+
+    /* Tablet-big */
+    @media (max-width: 1139px) {
+        width: 270px;
+    }
+
+    /* Tablet-small */
+    @media (max-width: 899px) {
+        width: 226px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        width: 290px;
+    }
+}
+
+.card.card--big {
+    width: 540px;
+
+    /* Tablet-big */
+    @media (max-width: 1139px) {
+        width: 420px;
+    }
+
+    /* Tablet-small */
+    @media (max-width: 899px) {
+        width: 354px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        width: 290px;
+    }
+}
+
+.card__image {
+    position: relative;
+    margin-bottom: 14px;
+
+    overflow: hidden;
+
+     /* Tablet-big */
+     @media (max-width: 1139px) {
+        margin-bottom: 10px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        background-color: rgba(251, 220, 77, .750);
+
+        transform: translateY(100%);
+        transition: .2s all ease;
+    }
+
+    span {
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 180px;
+
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+
+        padding: 10px 15px;
+        background-color: #EF6857;
+        border-radius: 80px;
+        text-align: center;
+        color: #fff;
+
+        z-index: 3;
+
+        opacity: 0;
+        transition: .2s all ease;
+
+        &:hover {
+            top: 48%;
+        }
+
+        /* Tablet-small */
+        @media (max-width: 899px) {
+            min-width: 150px;
+            padding: 10px 10px;
+            font-size: 14px;
+        }
+    }
+}
+
+.card.card--big {
+    .card__image {
+        span {
+            padding: 14px 20px;
+            font-size: 18px;
+            line-height: 1.3;
+            min-width: 208px;
+
+            /* Tablet-small */
+            @media (max-width: 899px) {
+                min-width: 170px;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.card:hover {
+    .card__image::before {
+        transform: translateY(0);
+    }
+
+    span {
+        opacity: 1;
+    }
+}
+
+.card--big .card__image {
+    margin-bottom: 20px;
+
+    /* Tablet-small */
+    @media (max-width: 899px) {
+        margin-bottom: 10px;
+    }
+}
+
+.card.card--big img {
+    width: 540px;
+    height: 370px;
+
+    /* Tablet-big */
+    @media (max-width: 1139px) {
+        width: 420px;
+        height: 288px;
+    }
+
+    /* Tablet-small */
+    @media (max-width: 899px) {
+        width: 354px;
+        height: 181px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+.card__image img {
+    width: 350px;
+    height: 220px;
+
+    /* Tablet-big */
+    @media (max-width: 1139px) {
+        width: 270px;
+        height: 169px;
+    }
+
+    /* Tablet-small */
+    @media (max-width: 899px) {
+        width: 226px;
+        height: 140px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        width: 100%;
+        height: 181px;
+    }
+}
+
+.card__image img, .card.card--big img {
+    object-fit: cover;
+}
+
+.card__title {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 6px;
+
+    /* Tablet-big */
+    @media (max-width: 1139px) {
+        font-size: 18px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        margin-bottom: 5px;
+    }
+}
+
+.card__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+
+    /* Tablet-big */
+    @media (max-width: 1139px) {
+        font-size: 14px;
+    }
+}
+
+.card__title--big {
+    font-size: 30px;
+    margin-bottom: 8px;
+
+    /* Tablet-big */
+    @media (max-width: 1139px) {
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+
+    /* Tablet-small */
+    @media (max-width: 899px) {
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+}
+
+.card__subtitle--big {
+    font-size: 20px;
+
+    /* Tablet-big */
+    @media (max-width: 1139px) {
+        font-size: 16px;
+    }
+
+    /* Tablet-small */
+    @media (max-width: 899px) {
+        font-size: 14px;
+    }
+}

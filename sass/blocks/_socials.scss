@@ -1,0 +1,27 @@
+.socials {
+    display: flex;
+    
+
+    /* Tablet-small */
+    @media (max-width: 899px) {
+        width: 270px;
+    }
+}
+
+.socials-link {
+    margin-right: 30px;
+    transition: opacity .1s ease;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        opacity: .75;
+    }
+
+    /* Tablet-big */
+    @media (max-width: 1139px) {
+        margin-right: 20px;
+    }
+}

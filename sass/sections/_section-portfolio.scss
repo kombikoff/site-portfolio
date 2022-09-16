@@ -1,0 +1,26 @@
+.section-portfolio {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    background: linear-gradient(0deg, $bg-color, $bg-color), #F4F8F9;
+
+    /* Tablet-big */
+    @media (max-width: 1139px) {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    /* Tablet-small */
+    @media (max-width: 899px) {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+}
+
+.section-portfolio__title {
+    margin-bottom: 40px;
+
+    /* Tablet-small */
+    @media (max-width: 899px) {
+        margin-bottom: 30px;
+    }
+}

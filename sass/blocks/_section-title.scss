@@ -1,0 +1,16 @@
+.section-title {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.3;
+
+    /* Tablet-big */
+    @media (max-width: 1139px) {
+        font-size: 42px;
+    }
+
+    /* Tablet-small */
+    @media (max-width: 899px) {
+        font-size: 32px;
+    }
+
+}

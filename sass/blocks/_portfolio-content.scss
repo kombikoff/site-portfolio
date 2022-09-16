@@ -1,0 +1,44 @@
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.portfolio-content__cards {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 50px;
+
+    /* Tablet-big */
+    @media (max-width: 1139px) {
+        row-gap: 40px;
+    }
+
+    /* Tablet-small */
+    @media (max-width: 899px) {
+        row-gap: 20px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        row-gap: 28px;
+        column-gap: unset;
+    }
+}
+
+.mix-block-btn button {
+    font-size: 18px;
+    margin-right: 20px;
+    font-weight: 600;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+button[type='button'].control-active {
+    color: $accent-color-hover;
+    border-bottom: 2px solid $accent-color-hover;
+    font-size: 20px;
+}

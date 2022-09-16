@@ -1,0 +1,64 @@
+.menu-burger {
+    display: none;
+    position: relative;
+    z-index: 1001;
+    cursor: pointer;
+
+    /* Tablet-small */
+    @media (max-width: 899px) {
+        display: block;
+        margin-left: auto;
+    }
+}
+
+.menu-burger-btn {
+    svg {
+
+        width: 40px;
+        height: 31px;
+
+        .line-top, .line-middle, .line-bottom {
+            width: 40px;
+            height: 5px;
+            fill: black;
+            
+        }
+
+        .line-middle {
+            y: 10px;
+            transition: .1s all ease .3s;
+        }
+
+        .line-bottom {
+            y: 20px;
+        }
+
+        .line-top, .line-bottom {
+            transition: .4s all ease;
+        }
+    }
+}
+
+.menu-burger-btn.menu-burger-btn--active {
+    svg {   
+        .line-top {
+            transform: rotate(45deg);
+            y: 10px;
+        }
+        
+        .line-middle {
+            height: 0;
+            transition: .1s all ease;
+        }
+        
+        .line-bottom {   
+            transform: rotate(-45deg);
+            y: 10px;
+        }
+
+        .line-top, .line-bottom {
+            transform-origin: center center;
+            transition: .4s all ease;
+        }
+    }
+}

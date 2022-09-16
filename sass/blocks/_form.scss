@@ -1,0 +1,97 @@
+input, textarea {
+    border-bottom: 2px solid #E5E5E5;
+}
+
+textarea {
+    padding: 10px;
+}
+
+.form {
+    width: 540px;
+    height: 449px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 20px 100px -10px rgba(160, 206, 237, 0.75);
+
+    font-size: 22px;
+
+    padding-top: 62px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    position: relative;
+    z-index: 98;
+
+    /* Tablet-big */
+    @media (max-width: 1139px) {
+        font-size: 18px;
+    }
+
+    /* Tablet-small */
+    @media (max-width: 899px) {
+        width: 410px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        font-size: 16px;
+        height: 410px;
+        width: 100%;
+        padding: 40px 20px;
+    }
+}
+
+.fake-placeholder {
+    display: block;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1;
+    
+    color: #9D9D9D;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; // Пропускает клик ч/з эл-т.
+
+    transition: all .2s ease;
+}
+
+.form-item {
+    position: relative;
+}
+
+.input-email, .input-textarea {
+    width: 100%;
+}
+
+.input-email {
+    height: 38px;
+    margin-bottom: 48px;
+}
+
+.input-textarea {
+    height: 156px;
+    margin-bottom: 25px;
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        margin-bottom: 20px;
+    }
+}
+
+.fake-placeholder.fake-placeholder--active {
+    color: #ECA73F;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+
+    top: -23px;
+}
+
+.form__btn {
+    /* Tablet-small */
+    @media (max-width: 899px) {
+        width: 100%;
+    }
+}

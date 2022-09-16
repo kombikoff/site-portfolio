@@ -1,0 +1,21 @@
+#overlay {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(37, 73, 116, 0.8);
+
+    
+
+    &.active {
+        display: block;
+        transition: .3s all ease;
+
+        @media(min-width: 1200px) {
+            display: none;
+        }
+    }
+}

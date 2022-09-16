@@ -1,0 +1,33 @@
+.page-top {
+    position: sticky;
+    z-index: 99;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    // backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.998);
+    top: -35px;
+
+    /* Tablet-big */
+    @media (max-width: 1139px) {
+        top: -20px; 
+        padding-bottom: 15px;
+        padding-top: 40px;
+    }
+
+    /* Tablet-small */
+    @media (max-width: 899px) {
+        top: -5px;
+        padding-top: 30px;
+        padding-bottom: 1px;
+        height: 80px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        backdrop-filter: unset;
+        background-color: #fff;
+        height: 70px;
+        top: -15px;
+    }
+}
